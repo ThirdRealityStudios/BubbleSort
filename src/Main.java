@@ -2,12 +2,12 @@ public class Main
 {
     public static void main(String[] args)
     {
-        int[] unsorted = new int[]{0,2,3,4};
+        int[] unsorted = new int[]{5,5,99,-22,0,2,3,4};
 
         BubbleSort bS = new BubbleSort();
 
-        int[] sorted = bS.sort(unsorted);
-
-        bS.print(sorted);
+        bS.print(unsorted);
+        bS.sort(unsorted);
+        bS.print(unsorted);
     }
 }
